@@ -80,7 +80,17 @@ const generateToken = (id) => {
   });
 };
 
+const getMe = asyncHandler(async (req, res) => {
+  const user = {
+    id: req.user._id,
+    email: req.user.email,
+    name: req.user.name,
+  };
+  res.status(200).json(req.user);
+});
+
 module.exports = {
   registerUser,
   loginUser,
+  getMe,
 };
