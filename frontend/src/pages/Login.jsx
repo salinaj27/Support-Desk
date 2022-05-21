@@ -42,7 +42,7 @@ function Login() {
       </section>
 
       <section className="form">
-        <form onSumbit={onSubmit}>
+        <form onSubmit={onSubmit}>
           <div className="form-group">
             <input
               type="email"
