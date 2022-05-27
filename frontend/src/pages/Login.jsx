@@ -50,7 +50,7 @@ function Login() {
   };
 
   if (isLoading) {
-    return <Spinner></Spinner>;
+    return <Spinner />;
   }
 
   return (
